@@ -8,6 +8,10 @@ public class Solution {
         Stack<Character> operator = new Stack<Character>();
         Stack<Integer> number = new Stack<Integer>();
 
+        s=s.trim();
+        if(s.startsWith("-")) {
+            s = 0 + s;
+        }
         int l = 0;
         while (l < s.length()) {
             if (isNum(s.charAt(l))) {
