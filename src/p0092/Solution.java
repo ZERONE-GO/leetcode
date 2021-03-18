@@ -19,7 +19,6 @@ public class Solution {
         ListNode begin = leftNode.next;
         ListNode prev = leftNode.next;
         ListNode next = leftNode.next.next;
-        
         while(index < right) {
             ListNode tmp = next.next;
             next.next = prev;
