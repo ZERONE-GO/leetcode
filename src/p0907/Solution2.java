@@ -1,6 +1,6 @@
 package p0907;
 
-public class Solution {
+public class Solution2 {
     private static final int MOD = 1000000007;
     
     public int sumSubarrayMins(int[] arr) {
