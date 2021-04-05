@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Solution {
 
-    private int[][] move = { { -1, 0 }, { 1, 0 }, { 0, 1 }, { 0, -1 } };
+    private int[][] move = { { 1, 0 }, { -1, 0 }, { 0, 1 }, { 0, -1 }, { 0, 0 } };
 
     public boolean escapeMaze(List<List<String>> maze) {
         int n = maze.get(0).size();
@@ -20,7 +20,7 @@ public class Solution {
         if (s.x == n && s.y == m) {
             return true;
         }
-        if (s.t >= maze.size()-1) {
+        if (s.t >= maze.size() - 1) {
             return false;
         }
 
@@ -71,10 +71,6 @@ public class Solution {
             this.m2 = m2;
             this.mx = mx;
             this.my = my;
-        }
-
-        public String toString() {
-            return t + ", " + x + ", " + y + ", " + m1 + ", " + m2 + ", " + mx + ", " + my;
         }
     }
 
