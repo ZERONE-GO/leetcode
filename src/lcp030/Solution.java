@@ -1,4 +1,4 @@
-package game003;
+package lcp030;
 
 import java.util.PriorityQueue;
 

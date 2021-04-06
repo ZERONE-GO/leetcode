@@ -1,4 +1,4 @@
-package game002;
+package lcp029;
 
 public class Solution {
 

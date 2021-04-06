@@ -1,4 +1,4 @@
-package game001;
+package lcp028;
 
 import java.util.Arrays;
 
