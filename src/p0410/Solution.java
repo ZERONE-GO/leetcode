@@ -1,8 +1,6 @@
 package p0410;
 
 public class Solution {
-    
-    
     public int splitArray(int[] nums, int m) {
         int[] sum = new int[nums.length + 1];
         sum[0] = 0;
