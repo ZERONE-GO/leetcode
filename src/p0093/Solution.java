@@ -48,6 +48,9 @@ public class Solution {
         int d = 0;
         for (int i = l; i <= r; i++) {
             d = d * 10 + s.charAt(i) - '0';
+            if(d > 255) {
+                return false;
+            }
         }
         return d <= 255;
     }
