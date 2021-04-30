@@ -30,10 +30,10 @@ public class Solution {
                 res += p[1];
 
                 for (int i = 0; i < points.length; i++) {
-                    int[] p2 = new int[2];
-                    p2[0] = i;
-                    p2[1] = map[p[0]][i];
-                    queue.add(p2);
+                    if(!color[i]) {
+                        int[] p2 = {i, map[p[0]][i]};
+                        queue.add(p2);
+                    }
                 }
             }
         }
