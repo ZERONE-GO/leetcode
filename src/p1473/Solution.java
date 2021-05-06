@@ -60,11 +60,7 @@ public class Solution {
                                 }
                             }
 
-                            if (v == -1) {
-                                map[i][j][t] = -1;
-                            } else {
-                                map[i][j][t] = v;
-                            }
+                            map[i][j][t] = v;
                         }
                     }
                 }
