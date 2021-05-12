@@ -13,10 +13,10 @@ public class Solution {
         }
         int res = 0;
         for (int i = 0; i < size; i++) {
-            if(check(map, size-n, i)) {
-                map[size-n][i] = true;
-                res += nQueeens(map, n-1, size);
-                map[size-n][i] = false;
+            if (check(map, size - n, i)) {
+                map[size - n][i] = true;
+                res += nQueeens(map, n - 1, size);
+                map[size - n][i] = false;
             }
         }
         return res;
