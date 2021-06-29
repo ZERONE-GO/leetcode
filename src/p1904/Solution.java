@@ -1,19 +1,22 @@
-package p5789;
+package p1904;
 
 public class Solution {
 
     public int numberOfRounds(String startTime, String finishTime) {
         Time start = new Time(startTime);
-        start.mod();
         Time end = new Time(finishTime);
 
         int s = start.toMinutes();
         int e = end.toMinutes();
 
         if (s > e) {
-            return (24 * 60 - s + e) / 15;
+            start.mod();
+            int ms = start.toMinutes();
+            return (24 * 60 - ms + e) / 15;
         } else {
-            return (e - s) / 15;
+            start.mod();
+            int ms = start.toMinutes();
+            return e > ms ? (e - ms) / 15 : 0;
         }
     }
 
@@ -50,7 +53,7 @@ public class Solution {
         // System.out.println(s.numberOfRounds("12:01", "12:44"));
         // System.out.println(s.numberOfRounds("20:00", "06:00"));
         // System.out.println(s.numberOfRounds("00:00", "23:59"));
-        System.out.println(s.numberOfRounds("08:31", "02:07"));
+        System.out.println(s.numberOfRounds("00:47", "00:57"));
     }
 
 }

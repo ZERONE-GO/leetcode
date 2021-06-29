@@ -80,9 +80,9 @@ public class Solution {
         }
         return new int[] { 0, 0 };
     }
-    
+
     public static void main(String args[]) {
-        int[][] board = {{4,1,2}, {5,0,3}};
+        int[][] board = { { 4, 1, 2 }, { 5, 0, 3 } };
         Solution s = new Solution();
         s.slidingPuzzle(board);
     }
