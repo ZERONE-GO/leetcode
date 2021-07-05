@@ -21,7 +21,7 @@ public class Solution {
                 l++;
 
                 int times = 0;
-                while (isNum(formula.charAt(l))) {
+                while (l < formula.length() && isNum(formula.charAt(l))) {
                     times = times * 10 + formula.charAt(l) - '0';
                     l++;
                 }
