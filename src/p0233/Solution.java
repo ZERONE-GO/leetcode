@@ -8,7 +8,7 @@ public class Solution {
         int k = 1;
         while (n >= k) {
             int tmp = k * 10;
-            ans += n / tmp + calcSubfix(n, tmp, k);
+            ans += (n / tmp) * k + calcSubfix(n, tmp, k);
             k = tmp;
         }
 
